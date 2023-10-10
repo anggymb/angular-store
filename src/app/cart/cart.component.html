@@ -1,0 +1,15 @@
+<h3>Carrito de compras</h3>
+<p> <a routerLink="/shipping">Costos de envío</a></p>
+<div class="cart-item" *ngFor="let item of items">
+    <span> {{item.name}}</span>
+    <span> {{item.price | currency}}</span>
+
+    <button mat-icon-button (click)="removeToCart(item)">
+        <mat-icon>delete </mat-icon>
+    </button>
+  
+</div>
+
+<button type= "button" (click)="clearCart()">Limpiar Carrito</button>
+
+

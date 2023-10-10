@@ -58,7 +58,8 @@ export const products = [
     description: 'La mejor expereincia de Android en un teléfono grande',
     photo: 'assets/images/phone7.jpeg'
   }
-  
+
+    
 ];
 
 
