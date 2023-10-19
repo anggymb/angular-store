@@ -12,7 +12,7 @@ import { Product } from '../products';
 export class CartComponent {
   
   items = this.cartService.getItems();
-  constructor(private cartService: CartService){}
+constructor(private cartService: CartService){}
 
 removeToCart(product:Product){
   this.items = this.cartService.removeToCart(product);
